@@ -1,24 +1,295 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Playbook — 2º Preparatoria — Misión M19: Orquestación Avanzada: Equipos de Agentes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
+  <header>
+    <h1><span class="book-icon">📋</span> <strong>Playbook Misión M19: Orquestación Avanzada: Equipos de Agentes</strong></h1>
+    <div class="header-widgets">
+      <div class="timer-container">
+        <span id="timer">⏱️ 00:00</span>
+        <button id="startStop">Start</button>
+        <button id="reset">Reset</button>
+      </div>
+      <div class="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle-input">
+          <span class="slider round"></span>
+        </label>
+        <i class="fas fa-moon"></i>
+      </div>
+    </div>
+  </header>
+  <div class="main-container">
+    <aside class="activity-list">
+      <h2>Actividades</h2>
+      <ul>
+        <li><a href="#activity-0">📝</a></li>
+        <li><a href="#activity-1">1</a></li>
+        <li><a href="#activity-2">2</a></li>
+        <li><a href="#activity-3">3</a></li>
+        <li><a href="#activity-4">4</a></li>
+        <li><a href="#activity-5">5</a></li>
+      </ul>
+      <div class="sidebar-info">
+        <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+        <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+      </div>
+    </aside>
+    <main id="playbook" class="playbook content">
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+      <!-- 0) De un Vistazo -->
+      <section class="activity-card" id="activity-0">
+        <h2 class="activity-title">📝 De un Vistazo: Misión M19: Orquestación Avanzada: Equipos de Agentes</h2>
+        <p class="activity-purpose">Resumen de objetivos, secuencia y entregables de la sesión.</p>
+        <div class="overview-table-container">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 50%;">Objetivos, Secuencia y Entregable</th>
+                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>Objetivos e “I Can”</h3>
+                  <ul>
+                    <li>Puedo diferenciar entre arquitecturas de agentes jerárquicas y colaborativas.</li>
+                    <li>Puedo diseñar un equipo de agentes de IA, definiendo sus roles, herramientas y flujos de comunicación.</li>
+                  </ul>
+                  <h3>Secuencia y tiempos</h3>
+                  <ol>
+                    <li>Saludo Interactivo con IA — 3 min</li>
+                    <li>“I Can” + Desafío — 5–7 min</li>
+                    <li>AI GYM — 10–12 min</li>
+                    <li>Brain Spark — 17–20 min</li>
+                    <li>GNIUS STORM — 5 min</li>
+                  </ol>
+                  <h3>Entregable del Micro-Proyecto</h3>
+                  <ul>
+                    <li>Un documento que define roles, herramientas especializadas y objetivos para al menos 3 agentes de IA (ej.: Investigador, Estratega de Marketing, Redactor Creativo) y describe su flujo de comunicación.</li>
+                  </ul>
+                </td>
+                <td>
+                  <h3>Criterios de calidad</h3>
+                  <ul>
+                    <li>Roles de agentes claramente definidos y especializados.</li>
+                    <li>Herramientas asignadas pertinentes a cada rol.</li>
+                    <li>Objetivos específicos y medibles para cada agente.</li>
+                    <li>Flujo de comunicación entre agentes coherente con un patrón multi-agente (Jerárquico o Colaborativo).</li>
+                    <li>Justificación del patrón de diseño multi-agente elegido.</li>
+                  </ul>
+                  <h3>Materiales y preparación</h3>
+                  <ul>
+                    <li>Proyector e internet</li>
+                    <li>LLM (Xolo)</li>
+                    <li>IDE/Notebook (para diseño conceptual)</li>
+                    <li>Documentación/ejemplos de frameworks multi-agente (e.g., CrewAI conceptos).</li>
+                  </ul>
+                  <h3>Preparación previa</h3>
+                  <ol>
+                    <li>Revisar arquitecturas multi-agente (Jerárquico, Colaborativo).</li>
+                    <li>Comprender conceptos de CrewAI.</li>
+                    <li>Preparar un documento de diseño de equipo multi-agente de ejemplo.</li>
+                  </ol>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- 1) Saludo Interactivo con IA -->
+      <section class="activity-card" id="activity-1">
+        <h2 class="activity-title">Saludo Interactivo con IA</h2>
+        <p class="activity-purpose">Activar a Xolo con perfil e intereses; conectar con el foco de la misión.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
+              <p class="step-instructions">Proyectar Diapositiva 2. Presenta el tema y su valor profesional según la Columna 1.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Equipo: hoy trabajaremos en la orquestación avanzada de equipos de agentes de IA para lograr modelar la colaboración entre entidades autónomas y resolver problemas complejos. Enfocaremos el trabajo en el diseño de arquitecturas multi-agente para producir un plan de colaboración efectivo.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Activación con Xolo</h3>
+              <p class="step-instructions">Cada estudiante envía a Xolo: “Hola Xolo, soy [Nombre], perfil [X]; me interesa [Y]. Misión M19: Orquestación Avanzada. Necesito foco en orquestación de agentes / patrones multi-agente.”</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Activen a Xolo con su perfil e intereses. Confirmen que comprendieron el criterio de hoy y sigan sus indicaciones personalizadas.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- 2) “I Can” + Desafío -->
+      <section class="activity-card" id="activity-2">
+        <h2 class="activity-title">“I Can Statement” + Desafío</h2>
+        <p class="activity-purpose">Alinear expectativas y definir el reto práctico.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Presenta el reto</h3>
+              <p class="step-instructions">Proyectar Diapositiva 3. Describe el reto y la meta observable, derivados de Columna 1 y 3.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">El reto es diseñar un equipo de agentes de IA que colaboren para un objetivo común, aplicando patrones de orquestación avanzados. Evaluaremos con la claridad de roles, la coherencia del flujo de comunicación y la justificación del patrón de diseño, y evidencia del producto.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Escribe tu “I Can”</h3>
+              <p class="step-instructions">Proyectar Diapositiva 4. Cada estudiante redacta 1 “I Can” concreto alineado al entregable de Columna 2.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Formula tu “Puedo…” en 1 frase: acción + criterio + resultado. Ej.: “Puedo diferenciar entre arquitecturas de agentes jerárquicas y colaborativas.” O: “Puedo diseñar un equipo de agentes de IA, definiendo sus roles, herramientas y flujos de comunicación.”</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- 3) AI GYM -->
+      <section class="activity-card" id="activity-3">
+        <h2 class="activity-title">AI GYM</h2>
+        <p class="activity-purpose">Formalizar el marco/técnica/herramienta central de la misión.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Marco del día</h3>
+              <p class="step-instructions">Proyectar Diapositiva 5. Introduce el marco según Columna 3 (Arquitecturas Multi-Agente: Jerárquico, Colaborativo; Herramienta: CrewAI conceptual).</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Este marco agrega valor porque nos permite escalar la complejidad de las tareas delegadas a la IA, modelando la colaboración. Eviten diseñar agentes aislados sin comunicación efectiva y no intentar que un solo agente haga todo. Usen la claridad de roles y el flujo de comunicación para validar resultados.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Mini-demostración</h3>
+              <p class="step-instructions">Proyectar Diapositiva 6. Construye ejemplo mínimo alineado a las tres columnas del input.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Observa cómo un pseudocódigo o diagrama simple de un equipo de agentes (ej., Manager-Worker) o un flujo de debate, mostrando cómo se pasa una tarea entre ellos, impacta el resultado. Verifica con la lógica de orquestación y la coherencia del flujo.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 3 — Check rápido</h3>
+              <p class="step-instructions">Proyectar Diapositiva 7. Verifica comprensión con 2 preguntas breves.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Pregunta 1: ¿Cuál es la principal diferencia entre una arquitectura multi-agente jerárquica y una colaborativa? Pregunta 2: ¿Cuándo sería útil considerar un framework como CrewAI?</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- 4) Brain Spark -->
+      <section class="activity-card" id="activity-4">
+        <h2 class="activity-title">Brain Spark</h2>
+        <p class="activity-purpose">Producir el entregable tangible del Micro-Proyecto.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Producción</h3>
+              <p class="step-instructions">Proyectar Diapositiva 8. Indica el producto específico (Columna 2) y un checklist de calidad (Columna 3). Tiempo de trabajo autónomo.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">N/A</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Iteración</h3>
+              <p class="step-instructions">Proyectar Diapositiva 9. Pide una mejora concreta basada en criterios del marco.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Antes de cerrar: refinen el flujo de comunicación para asegurar que el patrón de orquestación (jerárquico o colaborativo) se aplique consistentemente. Si no se cumple, ajusten y vuelvan a probar.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 3 — Evidencia</h3>
+            <p class="step-instructions">Proyectar Diapositiva 10. Solicita evidencia: documento de diseño (PDF/captura de pantalla), pseudocódigo del flujo de orquestación, diagrama de interacción entre agentes.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Entrega con nombre: M19_Orquestacion_Avanzada_[Equipo/Nombre]_[Versión]. Incluye el documento de diseño del equipo de agentes, pseudocódigo del flujo y un diagrama de interacción.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- 5) GNIUS STORM -->
+      <section class="activity-card" id="activity-5">
+        <h2 class="activity-title">GNIUS STORM</h2>
+        <p class="activity-purpose">Exhibir resultados y cerrar con síntesis accionable.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Showcase relámpago</h3>
+              <p class="step-instructions">2–3 presentaciones de 30–45 s, centradas en evidencia y criterio.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Enfoquen su presentación en la lógica de orquestación, cómo el patrón multi-agente resuelve el problema y la justificación de su elección de diseño. Muestren su diagrama o pseudocódigo.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
+              <p class="step-instructions">Proyectar Diapositiva 11. Síntesis: 1 aprendizaje, 1 criterio de mayor impacto y 1 siguiente paso fuera del aula.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Síntesis: El aprendizaje clave de hoy es la importancia de la orquestación y el diseño de arquitecturas multi-agente para la complejidad. Criterio clave: La claridad en la definición de roles y el flujo de comunicación fue lo que más impactó nuestro resultado. Siguiente paso aplicado: Explorar la implementación de estos diseños en frameworks como CrewAI o LangChain.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
   <script src="script.js"></script>
 </body>
-
 </html>
